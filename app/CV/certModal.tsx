@@ -1,13 +1,13 @@
 'use client'
 
 import React, {useEffect} from 'react'
-import Image from 'next/image'
+import Image, {StaticImageData} from 'next/image'
 
 interface CertModal {
     isOpen: boolean;
     onClose: () => void;
     title: string
-    image: string
+    image: StaticImageData
     link: string
 }
 
