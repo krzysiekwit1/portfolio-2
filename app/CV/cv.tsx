@@ -8,9 +8,6 @@ import {
     testingSkills,
     toolsSkills
 } from '@/app/CV/consts'
-import krzysztofImage from '../../public/KrzysztofW.jpg'
-import CertMidVue from '../../public/CertMidVue.png'
-import CertSeniorVue from '../../public/CertSeniorVue.png'
 import Image from 'next/image'
 import {CertModal} from './certModal'
 
@@ -70,7 +67,7 @@ export const CV = () => {
                     onMouseLeave={() => setHoveredSlide(null)}
                 >
                     <Image
-                        src={krzysztofImage}
+                        src='/KrzysztofW.jpg'
                         width={300}
                         height={300}
                         alt='Krzysztof Witkowski'
@@ -209,14 +206,14 @@ export const CV = () => {
                 isOpen={isSeniorVueModalOpen}
                 onClose={() => setIsSeniorVueModalOpen(false)}
                 title='Vue.js Senior Developer Level II'
-                image={CertSeniorVue}
+                image='/CertSeniorVue.png'
                 link='https://api.certificates.dev/certificates/a011fceb-6f98-42ff-a184-eb530b22ce58/download?signature=4d505ebe2d61d862972d2e2c4d22faeb753e3435a788a783396dfd65927163da'
             />
             <CertModal
                 isOpen={isMidVueModalOpen}
                 onClose={() => setIsMidVueModalOpen(false)}
                 title='Vue.js Developer Level I'
-                image={CertMidVue}
+                image='/CertMidVue.png'
                 link='https://api.certificates.dev/certificates/9ef8f25e-bf2e-465b-8373-0eceb88ec938/download?signature=54daf37d7e8c5cb30402580db3ed9ac09b5c621daa1e555e64bacde08a18bd9e'
             />
         </div>
