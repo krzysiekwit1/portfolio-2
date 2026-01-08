@@ -12,9 +12,9 @@ import krzysztofImage from '../../public/KrzysztofW.jpg'
 import CertMidVue from '../../public/CertMidVue.png'
 import CertSeniorVue from '../../public/CertSeniorVue.png'
 import Image from 'next/image'
-import {CertModal} from './CertModal'
+import {CertModal} from './certModal'
 
-const containerClassName = 'min-h-full bg-linear-to-br from-gray-900 via-gray-800 to-slate-900 text-white overflow-hidden relative'
+const containerClassName = 'min-h-full bg-gradient-to-br from-gray-900 via-gray-800 to-slate-900 text-white overflow-hidden relative'
 const leftSideContainerClassName = 'flex sm:h-screen flex-col sm:flex-row'
 const getLeftSideClassName = (hoveredSlide: number | null) => `flex flex-col justify-center items-center p-8 flex-1 lg:flex-[1.2] transition-all duration-700 ease-out hover:scale-105 hover:bg-blue-900/50 hover:backdrop-blur-md group
 ${
@@ -35,16 +35,16 @@ flex flex-col p-8 space-y-12 flex-1 lg:flex-[1.8] transition-all duration-700 ea
 }
 `
 const experienceContainerClassName = 'flex-1 min-h-0 flex flex-col m-0'
-const experienceHeaderClassName = 'text-2xl md:text-3xl lg:text-4xl font-black mb-6 bg-linear-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent drop-shadow-md group-hover:scale-110 transition-transform duration-500'
+const experienceHeaderClassName = 'text-2xl md:text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent drop-shadow-md group-hover:scale-110 transition-transform duration-500'
 const singleExperiencePointClassName = 'flex items-center gap-3 mb-3 pb-2 border-b-2 border-indigo-500/20 group-hover:border-indigo-400/40 transition-all duration-300'
 const singleExperiencePointTitleClassName = 'text-sm md:text-base lg:text-lg font-bold opacity-90 group-hover:text-indigo-200'
-const getSingleExperiencePointYearsClassName = (yearColor: string) => `px-2 py-1 rounded-full text-xs font-bold bg-linear-to-r from-${yearColor}-500/20 to-${yearColor}-400/20 border border-${yearColor}-400/30 shadow-sm`
+const getSingleExperiencePointYearsClassName = (yearColor: string) => `px-2 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-${yearColor}-500/20 to-${yearColor}-400/20 border border-${yearColor}-400/30 shadow-sm`
 const taskClassName = 'opacity-90 hover:opacity-100 hover:translate-x-2 transition-all duration-300 pl-4 border-l-2 border-indigo-500/20 group-hover:text-indigo-200 group-hover:border-indigo-400/40'
-const dividerClassName = 'w-full h-px bg-linear-to-r from-transparent via-white/20 to-transparent m-0'
-const skillsHeaderClassName = 'text-2xl md:text-3xl lg:text-4xl font-black mb-6 bg-linear-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent drop-shadow-md group-hover:scale-110 transition-transform duration-500'
+const dividerClassName = 'w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent m-0'
+const skillsHeaderClassName = 'text-2xl md:text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 bg-clip-text text-transparent drop-shadow-md group-hover:scale-110 transition-transform duration-500'
 
 const sharedHeaderClassName = 'text-lg md:text-xl lg:text-2xl font-bold mb-3 tracking-wide border-b-2'
-const sharedSkillClassName = 'bg-linear-to-r backdrop-blur-sm transition-all text-center'
+const sharedSkillClassName = 'bg-gradient-to-r backdrop-blur-sm transition-all text-center'
 
 const coreHeaderClassName = `${sharedHeaderClassName} text-amber-300 border-amber-400/50 pb-2`
 const coreSkillClassName = `${sharedSkillClassName} from-amber-500/20 to-yellow-500/20 px-3 py-2 rounded-md text-xs font-semibold cursor-pointer duration-400 hover:scale-110 hover:-translate-y-1 hover:shadow-lg hover:shadow-amber-500/30 border border-amber-400/30 leading-tight`
