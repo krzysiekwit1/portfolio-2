@@ -1,14 +1,18 @@
 {
   "name": "online-cv",
+  "homepage": "https://lrzysiekwit1.github.io/portfolio-2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
